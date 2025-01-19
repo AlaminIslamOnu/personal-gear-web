@@ -78,22 +78,47 @@
     margin-left: 100px;
    }
             
-   
-    
-    .main-camera{
+.main-camera{
         margin-top: 50px;
     }
+
+                     /*  2nd container */
+.company{
+    display: flex;
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-top: 60px;
+    border: 0.1% solid ;
+    
+    justify-content: space-evenly;
+}                 
+
+
+
+
+
+
+
 
 
 
     @media screen and (max-width:576px) {
 
-         .navbar{
+         .navbar , .company , .linkbar{
             flex-direction: column;
             gap:20px;
         } 
           .navbar{
             margin-top: 20px;
+          }
+
+          .company{
+            gap: 50px;
+            margin: 0 20px;
+            
+          }
+          .company img{
+             margin:0 80px;
           }
 
 
@@ -103,6 +128,7 @@
             margin-top: 15px;
             text-align: center;
             gap: 20px;
+            margin-bottom: 50px;
          }
 
 
@@ -113,8 +139,8 @@
             margin: auto;
         }
         .main-camera{
-            margin: auto;
-            gap: 20px;
+            max-width: 100%;
+            height: auto;
         }
         .main-camera img , .bg-image{
            margin-top: 50px;
