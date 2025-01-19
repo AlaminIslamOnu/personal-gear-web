@@ -18,6 +18,7 @@
     background: #E02C6D;
     color: white;
     border-radius: 6px;
+    margin-top: 12px;
 }
 
 .primary-description{
@@ -27,7 +28,9 @@
 }
 .bg-image{
     background-image: url('./images/Circle\ design.svg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 90%;
     background-position: center;
     height: 100%;
 }
@@ -56,9 +59,10 @@
 }
                   /*   container-one */
 .Cone-headeing{
-    font-size:3.1rem;
-    font-weight: bold;
+    font-size:2.5rem;
+    font-weight: 900;
     color: #3A3A3A;
+    margin-bottom: 10px;
 }
 
 .containerone{
@@ -66,14 +70,55 @@
    justify-content: space-between;
    margin-left: 120px;
    margin-right: 130px;
+   
    } 
    .containerone-content{
-    margin-top: 145px;
+    padding: 30px;
+    margin-top: 135px;
+    margin-left: 100px;
    }
             
-   /*  .main-camera , */ .containerone-content{
-                border: 1px solid;
-    }
+   
+    
     .main-camera{
         margin-top: 50px;
     }
+
+
+
+    @media screen and (max-width:576px) {
+
+         .navbar{
+            flex-direction: column;
+            gap:20px;
+        } 
+          .navbar{
+            margin-top: 20px;
+          }
+
+
+
+         .containerone{
+            flex-direction: column-reverse;
+            margin-top: 15px;
+            text-align: center;
+            gap: 20px;
+         }
+
+
+        .containerone {
+            margin: auto;
+        }
+        .containerone-content{
+            margin: auto;
+        }
+        .main-camera{
+            margin: auto;
+            gap: 20px;
+        }
+        .main-camera img , .bg-image{
+           margin-top: 50px;
+        }
+          
+        
+    }  
