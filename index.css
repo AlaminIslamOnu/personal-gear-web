@@ -93,6 +93,50 @@
     justify-content: space-evenly;
 }                 
 
+                 /*     product container */
+        .products{
+            border: 1px solid black;
+            width: fit-content;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px 3px gray;
+        }
+        .product-container{
+            border: 1px solid ;
+            margin: 100px 180px 0 180px;
+            gap: 15px;
+            display: grid;
+            background-color: #AAAAAA;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .whole-product-container{
+            border: 1px solid pink;
+        }
+        h2{text-align: center;
+            font-size: 1.5rem;
+            width: 50%;
+            margin: 0 auto;
+           
+         }
+
+                              /*     feature-product part */
+                              .featured-product{
+                                background-color: #6C6C6C;
+                                margin: 160px 150px 100px 150px;
+                                display: flex;
+                                border: 1px solid;
+                              }
+                              .featured-product img{height: 100%;}
+
+
+                              .feature-content{
+                               background: #6C6C6C;
+                                border: 1px solid;
+                                margin:20px 3px 20px 80px;
+                              }
+                              h2 , p {
+                                margin-bottom: 20px;
+                              }
+
 
 
 
@@ -104,10 +148,20 @@
 
     @media screen and (max-width:576px) {
 
-         .navbar , .company , .linkbar{
+         .navbar , .company , .linkbar  {
             flex-direction: column;
             gap:20px;
         } 
+         .featured-product{
+            gap: 20px;
+            background-color: white;
+            flex-direction: column-reverse;
+         }
+
+
+
+
+
           .navbar{
             margin-top: 20px;
           }
@@ -139,11 +193,31 @@
             margin: auto;
         }
         .main-camera{
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
         }
         .main-camera img , .bg-image{
            margin-top: 50px;
+        }
+        .product-container{
+            margin: 30px auto;
+            width: fit-content;
+            gap:15px;
+            grid-template-columns: 1fr;
+        }
+        .last-img img{
+            
+            max-width: auto;
+
+        } 
+        .featured-product{
+            
+            margin: auto;
+        }
+
+        .feature-content{
+            margin: auto;
+            
         }
           
         
